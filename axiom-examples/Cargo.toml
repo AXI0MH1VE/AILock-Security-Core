@@ -1,0 +1,27 @@
+[package]
+name = "axiom-examples"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "repository_paradox"
+path = "src/bin/repository_paradox.rs"
+
+[[bin]]
+name = "axiom_demo"
+path = "src/bin/axiom_demo.rs"
+
+[dependencies]
+axiom-core = { path = "../axiom-core" }
+axiom-mcp = { path = "../axiom-mcp" }
+axiom-substrate = { path = "../axiom-substrate" }
+axiom-lst = { path = "../axiom-lst" }
+axiom-security = { path = "../axiom-security" }
+tokio = { workspace = true, features = ["full"] }
+serde = { workspace = true }
+serde_json = { workspace = true }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
+chrono = { workspace = true }

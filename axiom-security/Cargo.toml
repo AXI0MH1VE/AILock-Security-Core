@@ -1,0 +1,14 @@
+[package]
+name = "axiom-security"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[dependencies]
+axiom-core = { path = "../axiom-core" }
+axiom-substrate = { path = "../axiom-substrate" }
+serde = { workspace = true }
+serde_json = { workspace = true }
+thiserror = { workspace = true }
+tracing = { workspace = true }
