@@ -12,6 +12,9 @@ pub struct SubstrateState {
     pub tls_cert_subject: Option<String>,
     pub is_internal_network: bool,
     pub content_hash: Option<String>,
+    pub transaction_value: Option<f64>,
+    pub ma5_value: Option<f64>,
+    pub human_signature: Option<String>,
     pub timestamp: chrono::DateTime<chrono::Utc>,
     pub signature: String,
 }
@@ -27,6 +30,9 @@ impl SubstrateState {
             tls_cert_subject: None,
             is_internal_network: false,
             content_hash: None,
+            transaction_value: None,
+            ma5_value: None,
+            human_signature: None,
             timestamp: chrono::Utc::now(),
             signature: String::new(),
         }
